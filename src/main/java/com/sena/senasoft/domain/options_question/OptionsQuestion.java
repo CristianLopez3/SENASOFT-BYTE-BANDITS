@@ -1,5 +1,6 @@
 package com.sena.senasoft.domain.options_question;
 
+import com.sena.senasoft.domain.question.Question;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,5 +22,6 @@ public class OptionsQuestion {
     private String description;
     @ManyToOne
     @JoinColumn(name = "question_id")
-    private OptionsQuestion questions;
+    private Question questions;
+
 }
