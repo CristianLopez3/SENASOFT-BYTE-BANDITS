@@ -1,8 +1,8 @@
 
-create table medicos(
+create table tb_dev_role(
 
     id bigint not null auto_increment,
-    nombre varchar(100) not null unique,
+    name varchar(100) not null unique,
     primary key(id)
 
 );
