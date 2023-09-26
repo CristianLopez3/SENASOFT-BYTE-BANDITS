@@ -148,12 +148,12 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `senasoft_bd`.`tb_scores` (
   `id` BIGINT NOT NULL,
   `points` INT NOT NULL,
-  `goals_id` BIGINT NOT NULL,
+  `tb_forms_id` BIGINT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_score_goals1_idx` (`goals_id` ASC) VISIBLE,
-  CONSTRAINT `fk_score_goals1`
-    FOREIGN KEY (`goals_id`)
-    REFERENCES `senasoft_bd`.`tb_goals` (`id`)
+  INDEX `fk_tb_scores_tb_forms1_idx` (`tb_forms_id` ASC) VISIBLE,
+  CONSTRAINT `fk_tb_scores_tb_forms1`
+    FOREIGN KEY (`tb_forms_id`)
+    REFERENCES `senasoft_bd`.`tb_forms` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
