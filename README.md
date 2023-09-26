@@ -28,6 +28,8 @@ This project is mainly aimed at demonstrating the skills acquired during the SEN
 - html
 - css
 - javascript
+- MySQL
+
 
 ## Methodologies
 
@@ -35,6 +37,13 @@ For the development of our product in the SENASOFT competition, we have adopted 
 following current best practices in software development. Scrum allows us to effectively 
 manage the project, focus on delivering value and adapt in an agile way to changes that may 
 arise during the development process.
+
+## Design Patterns
+
+- REST
+- MVC
+- DTO
+- DAO
 
 ## Usage Instructions
 
