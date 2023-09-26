@@ -20,6 +20,22 @@ This project is mainly aimed at demonstrating the skills acquired during the SEN
 - Additional dependencies as needed
 - Configure your favorite IDE integration
 
+## Technologies
+
+- Java 17 
+- Trello
+- Spring boot
+- html
+- css
+- javascript
+
+## Methodologies
+
+For the development of our product in the SENASOFT competition, we have adopted the
+following current best practices in software development. Scrum allows us to effectively 
+manage the project, focus on delivering value and adapt in an agile way to changes that may 
+arise during the development process.
+
 ## Usage Instructions
 
 1. Clone this repository.
@@ -29,7 +45,7 @@ This project is mainly aimed at demonstrating the skills acquired during the SEN
 
 ## Documentation
 
-You can find the detailed API documentation at [this link](link-to-documentation).
+You can find the detailed API documentation at <link del drive>
 
 
 ## License

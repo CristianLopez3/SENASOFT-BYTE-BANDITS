@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/database_name
+    url: jdbc:mysql://localhost:3306/test
     username: root
-    root: root
+    password: root
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -10,6 +10,3 @@ spring:
       hibernate:
         format_sql: true
     show-sql: true
-server:
-  error:
-    include-stacktrace: never
