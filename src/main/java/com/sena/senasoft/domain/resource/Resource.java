@@ -1,5 +1,6 @@
 package com.sena.senasoft.domain.resource;
 
+import com.sena.senasoft.domain.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,5 +25,5 @@ public class Resource {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private Resource resource;
+    private User user;
 }

@@ -2,6 +2,7 @@ package com.sena.senasoft.domain.user;
 
 
 import com.sena.senasoft.domain.devrole.DevRole;
+import com.sena.senasoft.domain.form.Form;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -42,6 +43,10 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "roledev_id"))
     private Set<DevRole> devRoles = new HashSet<>();
+
+
+    @OneToMany(mappedBy = "creator")
+    private Set<Form> forms = new HashSet<>();
 
 
 }
