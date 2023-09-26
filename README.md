@@ -54,7 +54,7 @@ arise during the development process.
 
 ## Documentation
 
-You can find the detailed API documentation at <link del drive>
+You can find the detailed API documentation at https://drive.google.com/drive/folders/1XHCYB13gkUbT5JBAf7O0S-pXKukQnJvd?usp=sharing
 
 
 ## License
