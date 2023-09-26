@@ -34,9 +34,14 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    /**
+     * map many to many with developer role entity (DevRole)
+     */
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "tb_users_has_dev_role",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "roledev_id"))
     private Set<DevRole> devRoles = new HashSet<>();
+
+
 }
