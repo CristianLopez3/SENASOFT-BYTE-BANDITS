@@ -49,4 +49,14 @@ public class User {
     private Set<Form> forms = new HashSet<>();
 
 
+    public User (UserRegisterDataDto register){
+        String name = register.name();
+        String email = register.email();
+        String password = register.password();
+        String education = register.education();
+        Date birthDate = register.birthDate();
+        String city = register.city();
+        Role role = register.role();
+    }
+
 }
