@@ -23,7 +23,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, length = 100)
     private String name;
 
     private String email;
@@ -50,13 +49,13 @@ public class User {
 
 
     public User (UserRegisterDataDto register){
-        String name = register.name();
-        String email = register.email();
-        String password = register.password();
-        String education = register.education();
-        Date birthDate = register.birthDate();
-        String city = register.city();
-        Role role = register.role();
+        this.name = register.name();
+        this.email = register.email();
+        this.password = register.password();
+        this.education = register.education();
+        this.birthDate = register.birthDate();
+        this.city = register.city();
+        this.role = register.role();
     }
 
 }
